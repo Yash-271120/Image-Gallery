@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import Jumbotron from "./utils/Jumbotron"
+import SearchField from "./utils/SearchField"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <>
       <h1 className=' text-cyan-300 text-4xl'>React App</h1>
-    </div>
+      <Jumbotron>
+        <SearchField />
+      </Jumbotron>
+    </>
   )
 }
 
