@@ -1,29 +1,32 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 import Jumbotron from "./utils/Jumbotron";
 import SearchField from "./utils/SearchField";
 import ImageList from "./components/ImageList";
 
-import useUnsplashApi from "./hooks/useUnsplashApi";
+import useUnsplashAPI from "./hooks/useUnsplashAPI";
 
 export const ImageContext = createContext();
 
 function App() {
-  const { response, error, loading, fetchPhotos } = useUnsplashApi("puppies");
+  const [imageSearch, setImageSearch] = useState("BasketBall");
+
+  const { response, error, loading, fetchPhotos } =
+    useUnsplashAPI("BasketBall");
 
   const data = {
     response,
     error,
     loading,
     fetchPhotos,
+    setImageSearch,
   };
   return (
     <ImageContext.Provider value={data}>
-      <h1 className=" text-cyan-300 text-4xl">React App</h1>
       <Jumbotron>
         <SearchField />
       </Jumbotron>
-      <ImageList />
+      <ImageList imageSearch={imageSearch} />
     </ImageContext.Provider>
   );
 }
