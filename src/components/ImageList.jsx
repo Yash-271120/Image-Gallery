@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Image from "./Image";
 
+import { ImageContext } from "../App";
+
 const ImageList = () => {
+  const { response, loading } = useContext(ImageContext);
+  console.log(response);
   return (
     <>
       <h1 className=" text-center mt-6 text-2xl underline">
