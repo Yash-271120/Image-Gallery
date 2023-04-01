@@ -14,6 +14,7 @@ function App() {
   const { response, error, loading, fetchPhotos } =
     useUnsplashAPI("BasketBall");
 
+  console.log("test api key", import.meta.env.VITE_ACCESS_KEY);
   const data = {
     response,
     error,
