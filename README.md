@@ -1,3 +1,6 @@
+## Description
+Simple web app that allows users to see images based on the search term they enter. Made using React + Vite.
+
 ## Run Locally
 
 - clone the repository
