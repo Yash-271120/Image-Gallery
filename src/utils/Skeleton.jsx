@@ -6,11 +6,8 @@ const Skeleton = ({ items }) => {
     <>
       {skeletonItems.map((item, index) => {
         return (
-          <div className=" animate-pulse">
-            <div
-              key={index}
-              className=" bg-gray-400 rounded-lg h-64 mb-4"
-            ></div>
+          <div key={index} className=" animate-pulse">
+            <div className=" bg-gray-400 rounded-lg h-64 mb-4"></div>
           </div>
         );
       })}
