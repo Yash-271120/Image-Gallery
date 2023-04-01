@@ -4,7 +4,7 @@ import { ImageContext } from "../App";
 
 const SearchField = () => {
   const [searchData, setSearchData] = useState("");
-  const { fetchPhotos } = useContext(ImageContext);
+  const { fetchPhotos, setImageSearch } = useContext(ImageContext);
 
   const handleSearchChange = (e) => {
     setSearchData(e.target.value);
@@ -12,12 +12,14 @@ const SearchField = () => {
 
   const handleButtonClick = () => {
     fetchPhotos(searchData);
+    setImageSearch(searchData);
     setSearchData("");
   };
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       fetchPhotos(searchData);
+      setImageSearch(searchData);
       setSearchData("");
     }
   };
@@ -33,6 +35,7 @@ const SearchField = () => {
       />
       <button
         onClick={handleButtonClick}
+        disabled={!searchData}
         className=" bg-orange-400 px-6 py-2 rounded-tr rounded-br text-white focus:ring-orange-300 focus:ring-2 disabled:bg-gray-400"
       >
         Search
