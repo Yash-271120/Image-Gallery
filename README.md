@@ -12,4 +12,7 @@
 
 ## Preview
 
-![preview](/docs/videos/preview.mp4 "Preview of the app")
+
+https://user-images.githubusercontent.com/65940625/229286995-0ca3f28f-069a-4123-85a1-90887586557a.mp4
+
+
