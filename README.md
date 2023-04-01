@@ -1,6 +1,7 @@
 ## Run Locally
 
 - `clone the repository`
+- create .env file with `VITE_ACCESS_KEY = YOUR UNSPLASH ACCESS KEY`
 - `cd Image-Gallery`
 - `npm install`
 - `npm run dev`
