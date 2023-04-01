@@ -9,7 +9,10 @@ const Image = ({ data }) => {
         alt={data.alt_description}
       />
       <div className=" text-center mt-1">
-        <p className="mb-5 text-2xl">{data.alt_description}</p>
+        <p className="mb-5 text-2xl">
+          {data.alt_description.charAt(0).toUpperCase() +
+            data.alt_description.slice(1)}
+        </p>
         <div className=" h-10 w-full"></div>
       </div>
       <a
