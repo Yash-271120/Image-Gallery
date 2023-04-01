@@ -6,7 +6,7 @@ const api = createApi({
   accessKey: import.meta.env.VITE_ACCESS_KEY,
 });
 
-const useUnsplashApi = (query) => {
+const useUnsplashAPI = (query) => {
   const [response, setResponse] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -37,4 +37,4 @@ const useUnsplashApi = (query) => {
   };
 };
 
-export default useUnsplashApi;
+export default useUnsplashAPI;
