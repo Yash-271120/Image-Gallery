@@ -1,4 +1,5 @@
 ## Run Locally
+
 - `clone the repository`
 - `cd Image-Gallery`
 - `npm install`
@@ -6,5 +7,8 @@
 
 ## Live Demo
 
-[live web app](https://yash-271120.github.io/Image-Gallery/)
+[App](https://yash-271120.github.io/Image-Gallery/)
 
+## Preview
+
+![preview](/docs/videos/preview.mp4 "Preview of the app")
