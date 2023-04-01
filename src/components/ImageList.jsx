@@ -7,7 +7,6 @@ import { ImageContext } from "../App";
 
 const ImageList = ({ imageSearch }) => {
   const { response, loading } = useContext(ImageContext);
-  console.log(response);
   return (
     <>
       <h1 className=" text-center mt-6 text-2xl underline">
