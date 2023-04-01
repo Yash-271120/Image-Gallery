@@ -13,7 +13,7 @@ const ImageList = ({ imageSearch }) => {
         Showing Results for {imageSearch}
       </h1>
       <div className=" max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 my-10">
-        {response.length === 0 && !loading && (
+        {!loading && response.length === 0 && (
           <div className="text-center text-2xl font-bold">No images found</div>
         )}
         {loading ? (
