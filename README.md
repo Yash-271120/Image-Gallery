@@ -8,6 +8,7 @@ Simple web app that allows users to see images based on the search term they ent
 - create .env file with `VITE_ACCESS_KEY = YOUR UNSPLASH ACCESS KEY`
 - run `npm install`
 - run `npm run dev`
+- visit `http://127.0.0.1:5173/Image-Gallery/` to see the app
 
 ## Live Demo
 
